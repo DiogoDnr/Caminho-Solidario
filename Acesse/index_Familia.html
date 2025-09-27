@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/familia_style.css">
+    <title>Familias Cadastradas</title>
+</head>
+
+<body class="dashboard-body">
+
+    <header class="header-menu">
+        <img src="/img/logo.png" alt="logo caminho solidario" class="logo">
+        <nav>
+            <a href="index_dashboard.html"><strong>Painel de Gestão</strong></a>
+            <a href="index_Familia.html">Familias Cadastradas</a>
+            <a href="index_Login.html">Sair (Logout)</a>
+        </nav>
+    </header>
+    
+
+    <main>
+        <h1> Familias Cadastradas</h1>
+        <p>Cadastro Completo</p>
+        <input type="text" placeholder="Buscar por nome, CPF ou telefone..." class="search-Familia">
+        <table id="familias-table">
+            <thead class="familia-thead">
+                <tr>
+                    <th>Nome</th>
+                    <th>Data Nasc.</th>
+                    <th>Sexo</th>
+                    <th>Escolaridade</th>
+                    <th>Profissão</th>
+                    <th>Estado Civil</th>
+                    <th>RG</th>
+                    <th>CPF</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Rua</th>
+                    <th>Número</th>
+                    <th>Complemento</th>
+                    <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>CEP</th>
+                    <th>Referência</th>
+                    <th>Renda Familiar</th>
+                    <th>Pessoas na Casa</th>
+                    <th>Tipo Moradia</th>
+                    <th>Condições Casa</th>
+                    <th>Água/Saneamento</th>
+                    <th>Benefícios Sociais</th>
+                    <th>Condições Saúde</th>
+                    <th>Mensagem</th>
+                    <th>Dependentes</th>
+                    <th>Data Cadastro</th>
+                </tr>
+            </thead>
+            <tbody id="familias-tbody">
+                <!-- Conteúdo dinâmico via JS -->
+            </tbody>
+    </main>
+
+
+
+    <script src="/SRC/script.js"></script>
+
+</body>
+
+</html>

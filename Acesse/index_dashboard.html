@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Style/style.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="dashboard-body">
+
+    <header class="header-menu">
+        <img src="/img/logo.png" alt="logo caminho solidario" class="logo">
+        <nav>
+            <a href="index_dashboard.html"><strong>Painel de Gestão</strong></a>
+            <a href="index_Familia.html">Familias Cadastradas</a>
+            <a href="index_Login.html">Sair (Logout)</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+        <h1>Painel do Colaborador</h1>
+
+        <section class="dashboard-grid">
+            <div class="dashboard-card">
+                <h3>Famílias Cadastradas</h3>
+                <p class="card-number" id="total-families">0</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Doações no Mês</h3>
+                <p class="card-number" id="total-donations">0</p>
+            </div>
+            <div class="dashboard-card">
+                <h3>Ações Pendentes</h3>
+                <p class="card-number" id="pending-actions">0</p>
+            </div>
+        </section>
+
+        <section class="family-list">
+            <h2>Famílias Cadastradas</h2>
+            <input type="text" placeholder="Buscar por nome, CPF ou telefone..." class="search-bar">
+            <table id="families-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                        <th>Membros</th>
+                        <th>Profissão</th>
+                        <th>Data Cadastro</th>
+                        <th>Total de Doações</th>
+                        <th>Ações Pendentes</th>
+                        <th>Tipo de Doação</th>
+                    </tr>
+                </thead>
+                <tbody id="families-tbody">
+                    <!-- Conteúdo dinâmico via JS -->
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+
+    <script src="/SRC/script.js"></script>
+
+</body>
+
+</html>
